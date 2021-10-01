@@ -1,0 +1,38 @@
+html {
+  display: table;
+  margin: auto;
+}
+html, .main-container{
+  height: 100%;
+}
+h1{
+  padding-top:50px;
+}
+ body{
+  display: table-cell;
+  vertical-align: middle;
+  border: 3px solid grey;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 2em;
+}
+body > table > tr, td, th{
+ border: 3px solid grey;
+ text-align: center;
+ padding: 10px;
+ border-radius: 10px;
+}
+.tables{
+  border:3px solid grey;
+  border-radius: 10px;
+}
+.second-conatiner, p{
+  margin-left:20px;
+}
+/* footer{
+  visibility: hidden;
+} */
+
+body > table > tr, td{
+  border: 3px dotted green;
+}
