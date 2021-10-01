@@ -8,7 +8,7 @@ html, .main-container{
 h1{
   padding-top:50px;
 }
- body{
+body{
   display: table-cell;
   vertical-align: middle;
   border: 3px solid grey;
@@ -22,12 +22,12 @@ body > table > tr, td, th{
  padding: 10px;
  border-radius: 10px;
 }
-.tables{
+body > table{
   border:3px solid grey;
   border-radius: 10px;
 }
-.second-conatiner, p{
-  margin-left:20px;
+.p_access{
+  margin-left:30px;
 }
 /* footer{
   visibility: hidden;

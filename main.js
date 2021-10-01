@@ -30,9 +30,7 @@ let obj = {
 }
 console.log(obj);
 
-
 // Task 23:
-
 delete obj.email
 console.log(obj);
 
@@ -41,10 +39,7 @@ let arrayOfStrings = []
 for(let i = 0; i < 10; i++){
   let counter = Math.random().toString(20).substr(2, 6)
   arrayOfStrings.push(counter)
-
 }
-
-
 
 // Task 25:
 
@@ -85,13 +80,24 @@ let getLongestArray = function(par1, par2){
 getLongestArray(arr1, arr2)
 
 
-// Task 30:  // I know i needed to do first find the longest array and then calculate the sum of it.becaue of time management i was stucked. Sorry :)
+// Task 30:  //
+let arrays1 = [1, 23, 34, 4, 5, 45, 67, 89]
 let arrays2 = [23, 3, 4, 5, 6, 7, 8]
-let getSumOfLongestArray = function(param2){
-  let counter = 0
-  for(let i = 0; i < param2.length; i++){
-    counter += param2[i]
+let getSumOfLongestArray = function(param1, param2){
+  if(param1.length > param2.length){
+    let longestArr = param1
+    let counter = 0
+    for(let i = 0; i < longestArr.length; i++){
+      counter += longestArr[i]
+    }
+    console.log("The sum of longest Array is that : " + counter);
+  }else{
+    let longestArr2 = param2
+    let counter2 = 0
+    for(let j = 0; j < longestArr2.length; j++){
+      counter2 += longestArr2[j]
+    }
+    console.log("The sum of longest array is that : " + counter2);
   }
-  console.log("The sum of Longest array is : " + counter);
 }
-getSumOfLongestArray(arrays2)
+getSumOfLongestArray(arrays1, arrays2)
