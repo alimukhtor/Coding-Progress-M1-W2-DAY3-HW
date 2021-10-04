@@ -13,15 +13,18 @@
 
 
 // =============================================
+const writeHeader = function(title){
+  console.log(`\n\n >-------------------== [${title.toUpperCase()}]==-----------------------<`);
+}
 
-// Task 21:
+writeHeader("TASK 21: ")
 
 let x = "John"
 let y = "Doe"
 console.log(`"${x} <> ${y}"`);
 
 
-// Task 22:
+writeHeader("Task 22 : ")
 
 let obj = {
   name: "Ali",
@@ -30,23 +33,23 @@ let obj = {
 }
 console.log(obj);
 
-// Task 23:
+writeHeader("Task 23 : ")
+
 delete obj.email
 console.log(obj);
 
-// Task 24:
+writeHeader("Task 24 : ")
 let arrayOfStrings = []
 for(let i = 0; i < 10; i++){
   let counter = Math.random().toString(20).substr(2, 6)
   arrayOfStrings.push(counter)
 }
 
-// Task 25:
-
+writeHeader("Task 25 : ")
 console.log(arrayOfStrings);
 
 
-// Task 26:
+writeHeader("Task 26 : ")
 let arrayOfNumbers = []
 for(let i = 0; i < 100; i++){
   let randomNumbers = Math.floor(Math.random() * 50);
@@ -55,19 +58,7 @@ for(let i = 0; i < 100; i++){
 console.log(arrayOfNumbers);
 
 
-// Task 28:
-
-// let arrayOFArrays = [[]]
-// for(let i = 0; i < 10; i++){
-//   for(let j = 0; j < 10; j++){
-//     let randomNums =  Math.floor(Math.random() * 50)
-//     arrayOFArrays[i][j].push(randomNums)
-//   }
-// }
-// console.log(arrayOFArrays);
-
-
-// Task 29:
+writeHeader("Task 29 : ")
 let arr1 = [1, 23, 34, 4, 5]
 let arr2 = [23, 3, 4, 5, 6, 7, 8]
 let getLongestArray = function(par1, par2){
@@ -80,7 +71,7 @@ let getLongestArray = function(par1, par2){
 getLongestArray(arr1, arr2)
 
 
-// Task 30:  //
+writeHeader("Task 30 : ")
 let arrays1 = [1, 23, 34, 4, 5, 45, 67, 89]
 let arrays2 = [23, 3, 4, 5, 6, 7, 8]
 let getSumOfLongestArray = function(param1, param2){
